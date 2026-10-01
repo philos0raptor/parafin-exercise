@@ -23,6 +23,14 @@ const PARAFIN_DEV_BASE_URL = "https://api.dev.parafin.com/v1";
 // "capital"     → PARAFIN_CLIENT_ID / PARAFIN_CLIENT_SECRET
 // "payovertime" → BNPL_CLIENT_ID    / BNPL_CLIENT_SECRET
 // "checkout"    → BNPL_CLIENT_ID    / BNPL_CLIENT_SECRET  (shared with Pay Over Time)
+console.log(
+  "Client ID length:",
+  process.env.PARAFIN_CLIENT_ID?.length
+);
+console.log(
+  "Client Secret length:",
+  process.env.PARAFIN_CLIENT_SECRET?.length
+);
 const PRODUCT_CREDENTIALS = {
   capital: {
     username: () => process.env.PARAFIN_CLIENT_ID,

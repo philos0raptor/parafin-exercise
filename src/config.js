@@ -12,7 +12,9 @@ const config = {
   capital: {
     // person_id from your Parafin sandbox
     // https://docs.parafin.com/capital/share-data/methods/api#3-create-a-person
-    personId: "person_83699def-d10a-4c6e-850e-c31bad428236",
+    //personId: "person_80a45846-1d97-461c-bf98-776b7813eb84", //Emma C.
+      personId: "person_cc829006-f4df-4e50-bd89-85206ad9689b", //Kaia C.
+    
   },
 
   // -------------------------------------------------------

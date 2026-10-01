@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import grubdashLogo from "../grubdash-logo.png";
 
 export const partnerColor = "#008363";
 export const partnerColorAlpha = "#00836314";
@@ -7,7 +8,9 @@ export const partnerColorAlpha = "#00836314";
 export const Header = () => {
   return (
     <HeaderShell>
-      <StyledHeader>Parafin Widget Quickstart</StyledHeader>
+      <StyledHeader>
+        <Logo src= {grubdashLogo} alt="GrubDash" />
+      </StyledHeader> <PortalLabel>Merchant Portal</PortalLabel>
     </HeaderShell>
   );
 };
@@ -21,6 +24,16 @@ const HeaderShell = styled.div`
 `;
 
 const StyledHeader = styled.h1`
-  color: ${partnerColor};
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+`;
+
+const Logo = styled.img`
+  display: block;
+  height: 44px;
+  width: auto;
+`;
+
+const PortalLabel = styled.span`
+rc  color: #555;
 `;

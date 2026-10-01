@@ -140,6 +140,12 @@ function App() {
         />
         {tab === "capital" && (
           <PageShell>
+            <CapitalIntro>
+              <h2>Business Capital</h2>
+                <p>
+                  Explore financing for your restaurant through your GrubDash account.
+                </p>
+              </CapitalIntro>
             <ParafinWidget
               token={token}
               product="capital"
@@ -202,4 +208,9 @@ const PageShell = styled.div`
 const ErrorText = styled.p`
   color: #c0392b;
   padding: 16px;
+`;
+const CapitalIntro = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 `;
