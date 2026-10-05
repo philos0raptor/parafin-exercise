@@ -1,17 +1,10 @@
-* {
-  margin: 0;
-  background-color: white;
-}
-
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
+  margin: 0;
+  background: #f6f8f5;
+  color: #20332b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 200;
-}
+button { font-family: inherit; }
